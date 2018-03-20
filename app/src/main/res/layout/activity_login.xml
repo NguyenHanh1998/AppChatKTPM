@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_page"
+    tools:context="com.example.hanhs.mychatapp.LoginActivity">
+
+    <include
+        layout="@layout/app_bar_layout"
+        android:id="@+id/login_page_bar"
+        ></include>
+
+    <EditText
+        android:id="@+id/login_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="205dp"
+        android:ems="10"
+        android:hint="Email..."
+        android:inputType="textEmailAddress|textPersonName"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/login_email"
+        android:layout_marginTop="69dp"
+        android:ems="10"
+        android:hint="Password..."
+        android:inputType="textPersonName|textPassword"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimaryDark"
+        android:text="Login"
+        android:textColor="#ffffff" />
+</RelativeLayout>

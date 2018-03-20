@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/start_page"
+    tools:context="com.example.hanhs.mychatapp.StartPageActivity">
+
+    <Button
+        android:id="@+id/already_have_acount"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="#df1d2d"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="161dp"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:text="Already have an acount" />
+
+    <Button
+        android:id="@+id/need_new_acount"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="#df1d2d"
+        android:layout_centerHorizontal="true"
+        android:layout_alignStart="@+id/already_have_acount"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:layout_marginBottom="80dp"
+        android:text="NEED NEW ACOUNT" />
+</RelativeLayout>
