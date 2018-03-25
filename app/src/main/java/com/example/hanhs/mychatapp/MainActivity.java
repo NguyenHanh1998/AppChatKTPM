@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mAuth = FirebaseAuth.getInstance();
-        mtoolbar = (Toolbar) findViewById(R.id.main_page_bar);
+        mtoolbar = (Toolbar) findViewById(R.id.main_plus_bar);
         setSupportActionBar(mtoolbar);
         getSupportActionBar().setTitle("MyChatApp");
 

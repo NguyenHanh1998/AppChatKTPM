@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -15,6 +17,8 @@ public class MainPlusActivity extends AppCompatActivity {
     private TabLayout myTablayout;
     private ViewPager myViewpager;
     private TabsPageAdapter tabsPageAdapter;
+    private DrawerLayout mDrawerLayout;
+    private ActionBarDrawerToggle actionBarDrawerToggle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +28,14 @@ public class MainPlusActivity extends AppCompatActivity {
         ptoolbar = (Toolbar) findViewById(R.id.main_plus_bar);
         setSupportActionBar(ptoolbar);
         getSupportActionBar().setTitle("MyAppChat");
+
+
+
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+                this, drawer,ptoolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        drawer.setDrawerListener(toggle);
+        toggle.syncState();
 
         myViewpager = (ViewPager) findViewById(R.id.main_viewpager);
         tabsPageAdapter = new TabsPageAdapter(getSupportFragmentManager());
