@@ -1,14 +1,55 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#f7f6ed"
+    android:fitsSystemWindows="true"
     tools:context="com.example.hanhs.mychatapp.FriendsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+   <android.support.design.widget.CollapsingToolbarLayout
+       android:layout_width="match_parent"
+       android:layout_height="70dp"
+       android:fitsSystemWindows="true"
+       android:layout_marginTop="10dp">
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Friends Fragment" />
+        android:weightSum="8"
+        android:layout_gravity="center_horizontal">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/search_toolbar"
+            android:padding="10dp"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:hint="Tìm kiếm"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/avatar"
+            android:padding="2dp"
+            app:civ_border_width="1dp"
+            app:civ_border_color="#ffffff"/>
+    </LinearLayout>
 
-</FrameLayout>
+   </android.support.design.widget.CollapsingToolbarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

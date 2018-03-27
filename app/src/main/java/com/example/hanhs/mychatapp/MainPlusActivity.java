@@ -25,6 +25,7 @@ public class MainPlusActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_plus);
 
+
         ptoolbar = (Toolbar) findViewById(R.id.main_plus_bar);
         setSupportActionBar(ptoolbar);
         getSupportActionBar().setTitle("MyAppChat");

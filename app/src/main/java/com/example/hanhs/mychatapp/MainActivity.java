@@ -3,6 +3,7 @@ package com.example.hanhs.mychatapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.Toolbar;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         mtoolbar = (Toolbar) findViewById(R.id.main_plus_bar);
         setSupportActionBar(mtoolbar);
         getSupportActionBar().setTitle("MyChatApp");
+
 
     }
 
