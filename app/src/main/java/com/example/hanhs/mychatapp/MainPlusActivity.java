@@ -2,6 +2,8 @@ package com.example.hanhs.mychatapp;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
@@ -11,7 +13,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class MainPlusActivity extends AppCompatActivity {
+public class MainPlusActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
      private Toolbar ptoolbar;
     private TabLayout myTablayout;
@@ -37,6 +39,9 @@ public class MainPlusActivity extends AppCompatActivity {
                 this, drawer,ptoolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
+
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);
 
         myViewpager = (ViewPager) findViewById(R.id.main_viewpager);
         tabsPageAdapter = new TabsPageAdapter(getSupportFragmentManager());
@@ -65,4 +70,27 @@ public class MainPlusActivity extends AppCompatActivity {
         }
         return true;
     }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+        int id = item.getItemId();
+
+        if(id == R.id.home)
+        {
+            ptoolbar.setTitle("Home");
+        }else if(id == R.id.setting)
+        {
+            Intent intentSetting = new Intent(MainPlusActivity.this,SettingActivity.class);
+            startActivity(intentSetting);
+            return false;
+        }
+        else if(id == R.id.friends)
+        {
+            
+        }
+        return false;
+    }
+
+
 }

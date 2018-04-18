@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:id="@+id/trangchu" android:title="Trang chủ" android:icon="@drawable/ic_account_balance_black_24dp"/>
-    <item android:id="@+id/events" android:title="Events" android:icon="@drawable/ic_bubble_chart_black_24dp"/>
+    <item android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/ic_account_balance_black_24dp"/>
+    <item
+        android:id="@+id/events"
+        android:title="Events"
+        android:icon="@drawable/ic_bubble_chart_black_24dp"/>
     <item android:id="@+id/search" android:title="Search" android:icon="@drawable/ic_search_black_24dp"/>
     <item android:id="@+id/activities" android:title="Activity" android:icon="@drawable/ic_local_activity_black_24dp"/>
-    <item android:id="@+id/Friends" android:title="Friends" android:icon="@drawable/ic_child_friendly_black_24dp"/>
+    <item android:id="@+id/friends" android:title="Friends" android:icon="@drawable/ic_child_friendly_black_24dp"/>
+    <item android:id="@+id/setting" android:title="Setting" android:icon="@drawable/ic_setting"/>
+
 </menu>

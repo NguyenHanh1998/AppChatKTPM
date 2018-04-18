@@ -1,10 +1,90 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#f7f6ed"
+    android:orientation="vertical"
     tools:context="com.example.hanhs.mychatapp.InforFragment">
 
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:src="@drawable/avatar"
+        app:civ_border_width="2sp"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10sp"
+        android:src="@drawable/line"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50sp"
+        android:layout_marginRight="50dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15sp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="Name"
+                android:gravity="center_vertical"
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Nhi Nguyễn"
+                android:gravity="center_vertical"
+                android:textSize="23sp"
+                android:textColor="@color/colorPrimary"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="Email"
+                android:gravity="center_vertical"
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="nhi.nguyen.754570"
+                android:gravity="center_vertical"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary"/>
+
+        </LinearLayout>
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:checked="true"
+            android:layout_marginRight="30dp"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10sp"
+        android:src="@drawable/line"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50sp"
+        android:layout_marginRight="50dp"/>
 
 
-</FrameLayout>
+</LinearLayout>
