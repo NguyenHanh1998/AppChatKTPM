@@ -87,7 +87,9 @@ public class MainPlusActivity extends AppCompatActivity implements NavigationVie
         }
         else if(id == R.id.friends)
         {
-            
+            Intent intentFriends = new Intent(MainPlusActivity.this,FriendActivity.class);
+            startActivity(intentFriends);
+            return false;
         }
         return false;
     }

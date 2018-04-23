@@ -27,7 +27,9 @@
             android:name=".RegisterActivity"
             android:parentActivityName=".StartPageActivity" />
         <activity android:name=".MainPlusActivity" />
-        <activity android:name=".SettingActivity"></activity>
+        <activity android:name=".SettingActivity" />
+        <activity android:name=".FriendActivity" />
+        <activity android:name=".ChangePassActivity"></activity>
     </application>
 
 </manifest>

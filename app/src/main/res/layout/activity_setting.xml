@@ -12,7 +12,7 @@
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_gravity="center"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="30dp"
         android:src="@drawable/avatar"
         app:civ_border_width="2sp"
         app:civ_border_color="@color/colorPrimary"
@@ -143,4 +143,31 @@
                 android:paddingRight="15sp" />
         </LinearLayout>
 </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp">
+        <Button
+            android:id="@+id/setting_profile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/corner_round"
+            android:layout_marginRight="30dp"
+            android:text="Change profile"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/colorLogin"/>
+        <Button
+            android:id="@+id/setting_pass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:background="@drawable/corner_round"
+            android:text="Change Password"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            android:textColor="@color/colorLogin"/>
+    </LinearLayout>
 </LinearLayout>

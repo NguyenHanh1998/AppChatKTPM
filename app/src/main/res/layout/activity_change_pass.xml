@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.hanhs.mychatapp.ChangePassActivity">
+
+    <include layout="@layout/app_bar_layout"
+            android:id="@+id/change_pass_bar"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Account"
+        android:textSize="20sp"
+        android:textColor="@color/colorLogin"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="01658244158"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/colorLogin"/>
+    <EditText
+        android:id="@+id/change_old_pass"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="10dp"
+        android:ems="10"
+        android:hint="   Enter old Password"
+        android:drawableLeft="@drawable/icon_password"
+        android:background="@drawable/corner_round"
+        android:inputType="textEmailAddress|textPassword"
+        android:textColorHint="@color/colorLogin"/>
+
+    <EditText
+        android:id="@+id/change_new_pass"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="10dp"
+        android:ems="10"
+        android:hint="   Enter new Password"
+        android:drawableLeft="@drawable/icon_password"
+        android:background="@drawable/corner_round"
+        android:inputType="textEmailAddress|textPassword"
+        android:textColorHint="@color/colorLogin"/>
+
+
+    <EditText
+        android:id="@+id/change_new_again_pass"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="10dp"
+        android:ems="10"
+        android:hint="   Enter new password again"
+        android:drawableLeft="@drawable/icon_check"
+        android:background="@drawable/corner_round"
+        android:inputType="textEmailAddress|textPassword"
+        android:textColorHint="@color/colorLogin"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/corner_red_cround"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginLeft="70dp"
+        android:text="CHANGE YOUR PASSWORD!"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>
