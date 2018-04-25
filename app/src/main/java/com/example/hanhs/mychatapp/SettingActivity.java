@@ -8,6 +8,7 @@ import android.widget.Button;
 
 public class SettingActivity extends AppCompatActivity {
 
+    private Button changeProfile;
     private Button changePass;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,11 +16,20 @@ public class SettingActivity extends AppCompatActivity {
         setContentView(R.layout.activity_setting);
 
         changePass = (Button) findViewById(R.id.setting_pass);
+        changeProfile = (Button) findViewById(R.id.setting_profile);
         changePass.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent changePassIntent = new Intent(SettingActivity.this,ChangePassActivity.class);
                 startActivity(changePassIntent);
+            }
+        });
+
+        changeProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent changeProfileIntent = new Intent(SettingActivity.this,ChangeProfileActivity.class);
+                startActivity(changeProfileIntent);
             }
         });
     }

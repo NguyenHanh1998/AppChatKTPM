@@ -10,4 +10,25 @@
     <string name="email" translatable="false">Email</string>
     <string name="telephone">Telephone</string>
     <string name="notification">Notify</string>
+    
+    <string-array name="Work">
+        <item>Computer programmer</item>
+        <item>Office worker</item>
+        <item>Accountant</item>
+        <item>Civil engineer</item>
+        <item>Doctor</item>
+        <item>Teacher</item>
+        <item>Architect</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="Favor">
+        <item>Football</item>
+        <item>table tennis</item>
+        <item>Tennis</item>
+        <item>Basketball</item>
+        <item>Volleyball</item>
+        <item>Badminton</item>
+        <item>Travel</item>
+        <item>Others</item>
+    </string-array>
 </resources>

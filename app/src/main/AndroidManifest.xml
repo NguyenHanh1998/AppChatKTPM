@@ -29,7 +29,8 @@
         <activity android:name=".MainPlusActivity" />
         <activity android:name=".SettingActivity" />
         <activity android:name=".FriendActivity" />
-        <activity android:name=".ChangePassActivity"></activity>
+        <activity android:name=".ChangePassActivity" />
+        <activity android:name=".ChangeProfileActivity"></activity>
     </application>
 
 </manifest>
