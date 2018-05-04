@@ -12,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 public class MainPlusActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
@@ -21,6 +22,8 @@ public class MainPlusActivity extends AppCompatActivity implements NavigationVie
     private TabsPageAdapter tabsPageAdapter;
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle actionBarDrawerToggle;
+    private TextView username;
+    private TextView email;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -85,6 +85,27 @@
         android:layout_marginTop="20dp"
         android:layout_marginLeft="50sp"
         android:layout_marginRight="50dp"/>
+    <Button
+        android:id="@+id/unfriend_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Unfriend"
+        android:ems="10"
+        android:background="@drawable/corner_round"
+        android:textColor="@color/colorPrimary"/>
+    <Button
+        android:id="@+id/block_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Block"
+        android:ems="10"
+        android:background="@drawable/corner_round"
+        android:textColor="@color/colorPrimary"/>
+
 
 
 </LinearLayout>
