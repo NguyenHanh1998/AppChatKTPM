@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.hanhs.mychatapp.ui.login.LoginActivity;
+
 public class StartPageActivity extends AppCompatActivity {
 
 

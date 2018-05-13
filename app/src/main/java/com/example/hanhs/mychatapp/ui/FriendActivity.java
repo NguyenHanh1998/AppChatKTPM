@@ -1,4 +1,4 @@
-package com.example.hanhs.mychatapp;
+package com.example.hanhs.mychatapp.ui;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
@@ -8,6 +8,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.Toast;
+
+import com.example.hanhs.mychatapp.R;
+import com.example.hanhs.mychatapp.TabsFriendPageAdapter;
 
 public class FriendActivity extends AppCompatActivity {
 

@@ -9,6 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.hanhs.mychatapp.adapters.AddAdapter;
+
 import java.util.ArrayList;
 
 

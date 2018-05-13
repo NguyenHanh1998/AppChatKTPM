@@ -10,7 +10,7 @@ public class RetrofitClient {
     public static Retrofit getClient() {
         if(retrofit == null) {
             retrofit = new Retrofit.Builder()
-                    .baseUrl("")
+                    .baseUrl("http://localhost:3000")
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();//link server
        }

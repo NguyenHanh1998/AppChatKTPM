@@ -14,6 +14,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import com.example.hanhs.mychatapp.ui.FriendActivity;
+
 public class MainPlusActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
      private Toolbar ptoolbar;

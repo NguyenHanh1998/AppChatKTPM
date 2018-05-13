@@ -22,7 +22,8 @@
         android:layout_marginTop="10dp"
         android:text="Hạnh Nguyễn"
         android:gravity="center"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        android:textColor="@color/colorLogin"/>
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="10dp"
@@ -40,7 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:text="Work"
+            android:text="Occupation"
             android:gravity="center_vertical"
             android:textSize="20dp" />
             <Spinner
@@ -64,7 +65,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:text="Favourite"
+                android:text="Hobbies"
                 android:gravity="center_vertical"
                 android:textSize="20dp" />
             <Spinner
@@ -87,7 +88,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent" 
-                android:text="Sex"
+                android:text="Gender"
                 android:gravity="center_vertical"
                 android:textSize="20sp"
                 />

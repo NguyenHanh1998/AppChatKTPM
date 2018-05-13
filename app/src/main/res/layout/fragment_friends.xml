@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#f7f6ed"
     android:fitsSystemWindows="true"
-    tools:context="com.example.hanhs.mychatapp.FriendsFragment">
+    tools:context="com.example.hanhs.mychatapp.ui.friend.FriendsFragment">
 
    <android.support.design.widget.CollapsingToolbarLayout
        android:layout_width="match_parent"

@@ -14,6 +14,8 @@
             android:id="@+id/item_image"
             android:layout_width="80dp"
             android:padding="10dp"
+            android:scaleX="1.4"
+            android:scaleY="1.4"
             android:layout_height="match_parent"
             android:src="@drawable/avatar" />
 
@@ -29,7 +31,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Name"
-                android:textColor="#ea0707"
+                android:textColor="@color/colorLogin"
                 android:textSize="25sp"
                 android:textStyle="bold" />
 
@@ -38,7 +40,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Content..."
-                android:textColor="#f32523"
+                android:textColor="@color/colorLogin"
                 android:textSize="20sp"
                 android:textStyle="italic" />
         </LinearLayout>

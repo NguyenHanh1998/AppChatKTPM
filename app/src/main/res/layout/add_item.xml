@@ -10,12 +10,15 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:orientation="horizontal"
-        android:weightSum="8">
+        android:weightSum="8"
+        android:layout_marginBottom="15dp">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/item_image_add"
         android:layout_width="80dp"
         android:padding="10dp"
+        android:scaleX="1.4"
+        android:scaleY="1.4"
         android:layout_height="match_parent"
         android:src="@drawable/avatar" />
 
@@ -31,7 +34,7 @@
             android:layout_height="match_parent"
             android:gravity="center_vertical"
             android:text="Name"
-            android:textColor="#ea0707"
+            android:textColor="@color/colorLogin"
             android:textSize="25sp"
             android:textStyle="bold" />
 
@@ -40,9 +43,10 @@
     <TextView
         android:id="@+id/item_check_add"
         android:layout_width="0dp"
-        android:layout_height="45dp"
+        android:layout_height="40dp"
         android:layout_gravity="center_vertical"
-        android:layout_weight="2.5"
+        android:layout_weight="2.0"
+        android:layout_marginLeft="10dp"
         android:background="@drawable/corner_round"
         android:gravity="center"
         android:text="Add"

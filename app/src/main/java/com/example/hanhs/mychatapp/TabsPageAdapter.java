@@ -4,6 +4,8 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import com.example.hanhs.mychatapp.ui.friend.FriendsFragment;
+
 class TabsPageAdapter extends FragmentPagerAdapter {
     public TabsPageAdapter(FragmentManager fm) {
         super(fm);

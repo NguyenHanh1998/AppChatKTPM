@@ -9,13 +9,7 @@
 
     <include layout="@layout/app_bar_layout"
             android:id="@+id/change_pass_bar"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:gravity="center"
-        android:text="Account"
-        android:textSize="20sp"
-        android:textColor="@color/colorLogin"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -23,6 +17,16 @@
         android:gravity="center"
         android:textSize="20sp"
         android:textColor="@color/colorLogin"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Account"
+        android:textColor="@color/colorLogin"
+        android:textSize="20sp" />
+
     <EditText
         android:id="@+id/change_old_pass"
         android:layout_width="match_parent"

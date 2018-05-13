@@ -23,14 +23,14 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".StartPageActivity" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".ui.login.LoginActivity"
             android:parentActivityName=".StartPageActivity" />
         <activity
             android:name=".RegisterActivity"
             android:parentActivityName=".StartPageActivity" />
         <activity android:name=".MainPlusActivity" />
         <activity android:name=".SettingActivity" />
-        <activity android:name=".FriendActivity" />
+        <activity android:name=".ui.FriendActivity" />
         <activity android:name=".ChangePassActivity" />
         <activity android:name=".ChangeProfileActivity"></activity>
 

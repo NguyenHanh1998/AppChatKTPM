@@ -66,7 +66,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="nhi.nguyen.754570"
+                android:text="nhi.nguyen.754570@gmail.com"
                 android:gravity="center_vertical"
                 android:textSize="15sp"
                 android:textColor="@color/colorPrimary"/>

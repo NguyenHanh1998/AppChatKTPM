@@ -1,4 +1,4 @@
-package com.example.hanhs.mychatapp;
+package com.example.hanhs.mychatapp.ui.login;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -11,6 +11,19 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.example.hanhs.mychatapp.MainPlusActivity;
+import com.example.hanhs.mychatapp.R;
+import com.example.hanhs.mychatapp.retrofit.retrofit.API;
+import com.example.hanhs.mychatapp.retrofit.retrofit.LoginService;
+import com.example.hanhs.mychatapp.retrofit.retrofit.response.LoginResponse;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -62,10 +75,31 @@ public class LoginActivity extends AppCompatActivity {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {*/
-                    Intent mainTentLogin = new Intent(LoginActivity.this, MainPlusActivity.class);
-                    mainTentLogin.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                    startActivity(mainTentLogin);
-                    finish();
+                    Map<String, String> body = new HashMap<>();
+                    body.put("username", email);
+                    body.put("password", password);
+                    API.createService(LoginService.class)
+                            .login(body)
+                            .enqueue(new Callback<LoginResponse>() {
+                                @Override
+                                public void onResponse(Call<LoginResponse> call, Response<LoginResponse> response) {
+                                    LoginResponse body = response.body();
+                                    int code = body.getCode();
+                                    if (code != 400) {
+                                        return;
+                                    }
+                                    Intent mainTentLogin = new Intent(LoginActivity.this, MainPlusActivity.class);
+                                    mainTentLogin.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                                    startActivity(mainTentLogin);
+                                    finish();
+                                }
+
+                                @Override
+                                public void onFailure(Call<LoginResponse> call, Throwable t) {
+                                    t.printStackTrace();
+                                }
+                            });
+
                  /*  } else {
                         Toast.makeText(RegisterActivity.this, "Error ocurred...  Try again!", Toast.LENGTH_SHORT).show();
                     }

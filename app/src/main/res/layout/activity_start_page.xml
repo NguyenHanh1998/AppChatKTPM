@@ -12,10 +12,10 @@
         android:layout_width="320dp"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
-        android:textColor="#df1d2d"
+        android:textColor="@color/colorLogin"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="161dp"
-        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:background="@drawable/corner_red_cround"
         android:text="Already have an acount" />
 
     <Button
@@ -26,7 +26,7 @@
         android:textColor="#df1d2d"
         android:layout_centerHorizontal="true"
         android:layout_alignStart="@+id/already_have_acount"
-        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:background="@drawable/corner_red_cround"
         android:layout_marginBottom="80dp"
         android:text="NEED NEW ACOUNT" />
 </RelativeLayout>
